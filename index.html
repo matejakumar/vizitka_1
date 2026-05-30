@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateja Kumar - Digitalna Vizitka</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 350px;
+            width: 100%;
+        }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #0077b5;
+        }
+        h1 { margin: 15px 0 5px 0; font-size: 24px; color: #222; }
+        .subtitle { color: #666; font-size: 16px; margin-bottom: 20px; }
+        .links { display: flex; flex-direction: column; gap: 10px; }
+        .btn {
+            display: block;
+            padding: 12px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .btn-linkedin { background-color: #0077b5; color: white; }
+        .btn-facebook { background-color: #1877f2; color: white; }
+        .btn-email { background-color: #333; color: white; }
+        .btn:hover { transform: translateY(-2px); opacity: 0.9; }
+        .qr-section { margin-top: 25px; border-top: 1px solid #eee; padding-top: 20px; }
+        .qr-section p { font-size: 12px; color: #777; }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <img src="https://via.placeholder.com/150" alt="Mateja Kumar" class="profile-img">
+    
+    <h1>Mateja Kumar</h1>
+    <div class="subtitle">Strokovnjakinja za komuniciranje & Marketing</div>
+    
+    <div class="links">
+        <a href="TVOJ_LINKEDIN_LINK" class="btn btn-linkedin" target="_blank">LinkedIn Profile</a>
+        <a href="TVOJ_FACEBOOK_LINK" class="btn btn-facebook" target="_blank">Facebook Profile</a>
+        <a href="mailto:tvoj.email@gmail.com" class="btn btn-email">Pošlji E-mail</a>
+    </div>
+
+    <div class="qr-section">
+        <p>Skeniraj za shranjevanje stika</p>
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://matejakumar.com" alt="QR Koda">
+    </div>
+</div>
+
+</body>
+</html>
